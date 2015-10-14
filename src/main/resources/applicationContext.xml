@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:cxf="http://cxf.apache.org/core"
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xmlns:soap="http://cxf.apache.org/bindings/soap"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+  	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+						http://www.springframework.org/schema/context
+  						http://www.springframework.org/schema/context/spring-context-4.0.xsd
+           				http://www.springframework.org/schema/aop
+  						http://www.springframework.org/schema/aop/sprlsing-aop-4.0.xsd"> 
+
+    <!-- Se localizan las anotaciones de tipo Service que contiene la capa de servicio -->
+
+	<context:annotation-config/>
+    <context:component-scan base-package="com.jpm.stocks.business"/>
+	
+							              <!-- 
+	
+    <context:component-scan base-package="com.jpm.stocks.business.logic.service.impl">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+	</context:component-scan>
+							              
+	<context:component-scan base-package="com.jpm.stocks.business.persistence.service.impl">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+	</context:component-scan>
+							               -->						
+
+
+</beans>

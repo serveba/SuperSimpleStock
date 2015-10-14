@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  	
+  	<name>Super Simple Stock</name>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.jpm.stocks</groupId>
+	<artifactId>super-simple-stock</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<description>Simple library implementation for an stocks technical problem</description>	
+ 
+	<properties>
+		<directory.javaSource>src/main/java</directory.javaSource>
+		<directory.resources>src/main/resources</directory.resources>
+		<directory.webcontent>src/main/webapp</directory.webcontent>
+		<joda.version>2.7</joda.version>
+		<spring.version>4.1.6.RELEASE</spring.version>
+		<commons.logging.version>1.2</commons.logging.version>
+		<log4j.version>1.2.17</log4j.version>
+		<junit.version>4.12</junit.version>
+	</properties>
+  
+ 	<dependencies>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+	 		<groupId>org.springframework</groupId>
+	 		<artifactId>spring-context</artifactId>
+	 		<version>${spring.version}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+	 		<artifactId>spring-beans</artifactId>
+	 		<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+			<version>${spring.version}</version>
+		</dependency>
+				
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>${commons.logging.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>${joda.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+			<version>${junit.version}</version>
+		</dependency>
+ 	</dependencies>
+  
+  	<build>
+  		<pluginManagement>
+  			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+	        		<version>3.2</version>  
+					<configuration>
+						<source>1.7</source>
+						<target>1.7</target>
+					</configuration>
+				</plugin>
+  			</plugins>
+  		</pluginManagement>		
+	</build>
+  
+	<repositories>
+		<repository>
+		    <id>central</id>
+		    <name>Central repository</name>
+		    <url>http://repo1.maven.org/maven2</url>
+		</repository>
+	</repositories>
+  
+</project>
