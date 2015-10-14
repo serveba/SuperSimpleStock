@@ -23,18 +23,7 @@
     <!-- Se localizan las anotaciones de tipo Service que contiene la capa de servicio -->
 
 	<context:annotation-config/>
-    <context:component-scan base-package="com.jpm.stocks.business"/>
-	
-							              <!-- 
-	
-    <context:component-scan base-package="com.jpm.stocks.business.logic.service.impl">
-		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
-	</context:component-scan>
-							              
-	<context:component-scan base-package="com.jpm.stocks.business.persistence.service.impl">
-		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
-	</context:component-scan>
-							               -->						
+    <context:component-scan base-package="com.jpm.stocks.business"/>					
 
 
 </beans>
