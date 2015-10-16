@@ -1,6 +1,6 @@
 # Super Simple Stock
 
-This is the description file of the project. Here you will find tips for running the application also the architecture description. This project is a sample tech exercise. 
+This is the description file of the project. Here you will find tips for running the application also the architecture description. This project is a tech exercise example. 
 
 ### Project architecture
 
@@ -12,14 +12,14 @@ The project is a classic Maven Java Project. It uses some Spring libraries in or
 
 * **Model** For the model we have the classes **Stock** and **Trade**. Both classes have the attributes and operations of each concept involved with the exercise.
 
-It's not a webapp, only a library (JAR file). Because of the structure is easy to expose the functionallity with  a SOAP or RESTFull webservice, also you can integrate as jar file with other projects.
+It's not a webapp, only a library (JAR file). Because of the structure is easy to expose the functionallity with  a SOAP or RESTFull webservice, also you can integrate as jar file with another projects.
 
-In order to probe the required functionallity we have made one test class **SuperSimpleStockServiceImplTest** for testing purposes with the sample data generated for the exercise and the required operations.
+In order to probe the required functionallity we have made one test class **SuperSimpleStockServiceImplTest** for testing purposes with the sample data generated for the exercise and all the required operations.
 
 ### Running the project
 
 It has been run successfully with Apache Maven 3.1.1 and Java 1.7.0_60.
-You can run the project with the following maven command:
+You can run the project with the following maven command (inside the project directory):
 
 $> mvn package
 
